@@ -1,0 +1,8 @@
+---
+- name: Dynamic
+  hosts: all
+  tasks:
+    - name: Dynamic task
+      ansible.builtin.copy:
+        content: "Sun set down in east"
+        dest: /etc/motd.d/banner
